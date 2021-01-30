@@ -1,0 +1,245 @@
+*
+  padding: 0
+  margin: 0
+
+body
+  font-family: Arial,Helvetica,sans-serif
+
+a
+  text-decoration: none
+  color: #000
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+  &:hover
+    text-decoration: underline
+h1
+  color: red
+  font-size: 40px
+  text-align: center
+  padding: 50px 0 0
+
+.wrapper
+  max-width: 1000px
+  margin: 0 auto
+
+.cards-item
+  display: flex
+  border: 1px solid silver
+  margin: 100px 10px
+  padding: 10px
+
+  @media (max-width: 768px)
+    flex-direction: column
+
+.cards-item__img
+  padding: 0 30px
+  @media (max-width: 768px)
+    max-width: 320px
+    align-self: center
+    padding: 30px
+
+.cards-item__img--img
+  width: 160px
+  height: 160px
+
+.cards-status
+  display: flex
+  justify-content: space-between
+  @media (max-width: 768px)
+    max-width: 400px
+
+.cards-status__code
+  font-size: 12px
+  color: #666
+
+.cards-status__status--link
+  cursor: pointer
+  color: #093
+  border-bottom: 1px dotted #093
+  &:hover
+    border-bottom: none
+
+.cards__content
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.cards-content__content
+  display: flex
+  justify-content: space-between
+  padding-bottom: 30px
+  @media (max-width: 768px)
+    max-width: 400px
+    flex-direction: column
+
+.cards-content__description
+  max-width: 505px
+
+.cards-description__title
+  font-size: 16px
+  line-height: 24px
+  font-weight: 700
+  @media (max-width: 768px)
+    margin-top: 20px
+
+
+.cards-description__description
+  font-size: 13px
+  line-height: 16px
+  color: #545454
+  margin-top: 30px
+
+.cards-description__additionally
+  font-size: 13px
+  line-height: 16px
+  color: #545454
+  margin-top: 30px
+
+.additionally-bold
+  font-weight: 700
+
+.prise__content
+  text-align: right
+
+.prise-block
+  display: flex
+  justify-content: space-between
+  width: 100%
+  @media (max-width: 768px)
+    margin-top: 20px
+
+.prise__prise
+  margin-top: 10px
+  display: none
+
+.prise__prise--active
+  display: block
+
+.prise__club-card
+  font-size: 14px
+  line-height: 17px
+  margin-right: 16px
+  text-align: right
+  max-width: 60px
+
+.prise__prise__club-card
+  font-size: 25px
+  font-weight: 700
+  color: #000
+  &:after
+    content: "₽"
+    height: 100%
+    padding-left: 10px
+
+.prise__prise__default
+  color: #a7a7a7
+  font-size: 25px
+  &:after
+    content: "₽"
+    height: 100%
+    padding-left: 10px
+
+.prise__unit
+  display: flex
+  justify-content: flex-end
+  margin-top: 10px
+  font-size: 13px
+  line-height: 13px
+  color: #707070
+
+.unit__m,
+.unit__packaging
+  cursor: pointer
+  border-bottom: 1px dotted #707070
+  transition: .2s
+  padding: 3px
+.unit__m
+  margin-right: 10px
+
+.unit-active
+  color: white
+  background: #000
+  cursor: default
+  border-bottom: 1px solid
+
+.prise__info
+  font-size: 13px
+  line-height: 15px
+  border: 1px solid silver
+  padding: 5px 30px
+  margin: 10px 0
+  text-align: center
+
+.prise__buy
+  display: flex
+  justify-content: flex-end
+  margin-top: 10px
+
+.btn--card
+  position: relative
+  width: 148px
+  height: 40px
+  padding: 0 0 0 20px
+  line-height: 40px
+  text-transform: uppercase
+  text-align: center
+  vertical-align: middle
+  color: white
+  background: #f90
+  outline: none
+  border: none
+  transition: 0.3s
+  overflow: hidden
+  cursor: pointer
+  &:hover
+    background: #333
+
+.img-btn-bye
+  position: absolute
+  width: 20px
+  height: 20px
+  left: 11px
+  top: 9px
+  fill: #fff
+
+.prise__buy
+  @media (max-width: 768px)
+    display: flex
+    justify-content: space-between
+
+.prise__buy__quantity
+  display: flex
+  margin-right: 10px
+
+
+.product__count
+  border: 1px solid #ccc
+  text-align: center
+  color: #333
+  font-size: 13px
+  line-height: 1.2
+  margin-right: -1px
+  overflow: hidden
+  padding: 12px 0 10px
+  width: 40px
+  height: 17px
+  outline: none
+
+.stepper-arrow
+  width: 25px
+  height: 19px
+  border: 1px solid #ccc
+  cursor: pointer
+  display: block
+
+.up
+  background: url("../assets/images/arrow-down.png") no-repeat 2px
+  transform: rotate(180deg)
+
+.down
+  margin-top: -1px
+  background: url("../assets/images/arrow-down.png") no-repeat 3px
+
+
+
+
+
